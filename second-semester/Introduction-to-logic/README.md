@@ -1,13 +1,10 @@
 # Lecture 1
 
-## Proposition
-A statement or assertion that expresses a judgment or opinion.
+## New Words
+- **Proposition**: A statement or assertion that expresses a judgment or opinion.
+- **Absurdity**: Meaningless
+- **Conventions**: An agreement between people that assumes something.
 
-## Absurdity
-Meaningless.
-
-## Conventions
-An agreement between people that assumes something.
 
 | Connective | Name          | Pronunciation | Intuitive Meaning                          |
 |------------|---------------|---------------|--------------------------------------------|
@@ -22,6 +19,7 @@ An agreement between people that assumes something.
 In the parse tree, ¬p will always be p → ⊥.
 
 Sub((𝑟 ∧ 𝑢 → 𝑤) ∧ (𝑢 ∧ ¬𝑤) → ¬𝑟 ) = { 
+    
     𝑟, 𝑢, 𝑟 ∧ 𝑢, 𝑤, 𝑟 ∧ 𝑢 → 𝑤, 
     ⊥, 𝑤 → ⊥, 𝑢 ∧ (𝑤 → ⊥), 
     𝑟 → ⊥, (𝑟 ∧ 𝑢 → 𝑤) ∧ (𝑢 ∧ (𝑤 → ⊥)), 
@@ -29,10 +27,15 @@ Sub((𝑟 ∧ 𝑢 → 𝑤) ∧ (𝑢 ∧ ¬𝑤) → ¬𝑟 ) = {
 } 
 
 Top-level connective: ∧ 
+
 Direct subformulas: p, q 
+
 Atomic formula: ⊥ 
+
 Subformulas of 𝜑: all the formulas that appear in the parse tree of 𝜑, including 𝜑 itself  
 
 Set of maps (𝐵^𝐴): 𝐴 → 𝐵 
+
 Powerset: P(𝐴) = {𝑈 | 𝑈 ⊆ 𝐴} 
+
 Natural Numbers: [𝑛] = {𝑘 ∈ N | 𝑘 < 𝑛} [0] = ∅, [1] = {0}
