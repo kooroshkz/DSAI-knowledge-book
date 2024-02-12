@@ -14,7 +14,8 @@
 | →          | Implication   | φ implies ψ   | If φ holds, then ψ holds                   |
 | ¬φ         | Negation      | φ -> ⊥        |                                            |
 | ⊤          | Truth or Top  | ¬⊥            | Always true (e.g., "A triangle has 3 vertices")|
-| φ ↔ ψ      | Bi-implication|               | (φ -> ψ) ∧ (ψ -> φ)                        |
+| φ ↔ ψ      | Bi-implication|(φ -> ψ) ∧ (ψ -> φ)| True when both are same        |
+
 
 In the parse tree, ¬p will always be p → ⊥.
 
