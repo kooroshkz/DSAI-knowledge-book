@@ -78,5 +78,5 @@ For example, in the linear transformation D: C^1[a, b] → C[a, b] (derivative):
 | Span    | Span{u}    | set of all possible linear combinations of u  | if v = [[1],[2],[3]] -> Span{u}={αv : α ∈ ℝ} |
 | Null    | Nul(A)     | set of all x where Ax=0                       |                                           |
 | Column  | Col(A)     | set of all linear combinations of the columns of A | x = [x1,x2,x3] Col(x) = {x1,x2,x3}         |
-| Kernel  | Ker(T)     | set of all vectors that get mapped to the zero vector under T | ker(T) = {v ∈ V | T(v)=0}              |
-| Image (Range) | Im(T) | set of all possible outputs obtained by applying T to every vector in its domain | Im(T) = {w ∈ W | T(v) = w for some v ∈ V} |
+| Kernel  | Ker(T)     | set of all vectors that get mapped to the zero vector under T | ker(T) = {v ∈ V I T(v)=0}              |
+| Image (Range) | Im(T) | set of all possible outputs obtained by applying T to every vector in its domain | Im(T) = {w ∈ W I T(v) = w for some v ∈ V} |
