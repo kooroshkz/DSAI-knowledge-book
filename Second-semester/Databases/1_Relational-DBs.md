@@ -26,6 +26,7 @@ Like XML (eXtensible Markup Language):
     <price>12.99</price>
   </book>
 </bookstore>
+```
 
 ---
 
