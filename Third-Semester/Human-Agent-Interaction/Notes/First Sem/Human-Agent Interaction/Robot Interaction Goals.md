@@ -1,0 +1,5 @@
+- Remember and understand the different <font color=00BFFF>theoretical concepts</font> underlying Human agent interaction
+- Apply these theoretical concepts in the ==design of in interactive agent==
+- Implement the design using suitable technology including but not limited to social robots, ==chat bots, virtual agents, TTS, STT==, computer vision, etc...
+- Analyse and evaluate the implemented design using an appropriate experimental setup with ==human test subjects==.
+- Collaborate as a group.
