@@ -124,7 +124,7 @@ Combines the actual cost to reach the node (g(n)) and the estimated cost from th
 
 - **Algorithm Steps:**
   1. Add the start node (A) to the frontier.
-  2. Repeatedly pick the node from the frontier with the lowest $ f(n) $ (best estimated total cost).
+  2. Repeatedly pick the node from the frontier with the lowest f(n) (best estimated total cost).
   3. Add its child nodes to the frontier.
   4. Continue until you reach the goal or the frontier is empty (failure).
 
@@ -133,6 +133,7 @@ A* combines two main ideas: actual cost to reach a node and an estimated cost to
 
 <img src="https://d18l82el6cdm1i.cloudfront.net/uploads/hevQ7EbwVU-output_prgol9.gif" alt="Breadth-First Search" width="250">
 <hr>
+
 ## Adversarial Search
 
 This is used in games where two players compete. The goal is to minimize the opponent's gains while maximizing your own.
@@ -220,7 +221,7 @@ def alphabeta(node, isMaximizingPlayer, alpha, beta):
 ```
 | Criterion        | Breadth-First      | Uniform-Cost          | Depth-First | Depth-Limited | Iterative Deepening | Bidirectional (if applicable) |
 |------------------|--------------------|------------------------|-------------|---------------|---------------------|-------------------------------|
-| **Complete?**    | Yes$^a$           | Yes$^{a,b}$           | No          | No            | Yes$^a$            | Yes$^{a,d}$                  |
+| **Complete?**    | Yes $^a$           | Yes $^{a,b}$           | No          | No            | Yes $^a$            | Yes $^{a,d}$                  |
 | **Time**         | $O(b^d)$          | $O(b^{1+C^*/\epsilon})$ | $O(b^m)$    | $O(b^\ell)$   | $O(b^d)$           | $O(b^{d/2})$                 |
 | **Space**        | $O(b^d)$          | $O(b^{1+C^*/\epsilon})$ | $O(bm)$     | $O(b^\ell)$   | $O(bd)$            | $O(b^{d/2})$                 |
-| **Optimal?**     | Yes$^c$           | Yes                   | No          | No            | Yes$^c$            | Yes$^{c,d}$                  |
+| **Optimal?**     | Yes $^c$           | Yes                   | No          | No            | Yes $^c$            | Yes $^{c,d}$                  |
