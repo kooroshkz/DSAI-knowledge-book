@@ -1,0 +1,25 @@
+- **chroot** for **sandboxing** changes the app’s "root folder" so it thinks it’s the only thing on the device.
+- Modern systems use **containers** (Linux namespaces) for **sandboxing** to isolate apps.
+- **Mobile Programming Paradigm**
+    - **Event-driven:** Apps respond to things like taps, messages, or network events.
+    - **Low resources:** Apps can be paused or killed anytime by the system to save battery or memory.
+- **Android App Components**
+    - **Activity:** a single screen with UI
+    - **Service:** background job
+    - **Content provider:** manages app data like databases or files
+    - **Broadcast receiver:** listens for system or app messages/events
+    - **Manifest:** an XML file describing app parts and permissions
+- **Malware spread on mobile methods:**
+  - **Repackaging:** legitimate app is modified with malware added.
+  - **Fake apps:** pretend to be real apps but are malware.
+  - **Update attacks:** app downloads malware after installation.
+  - **Malicious websites:** trick users to download malware.
+  - **Exploiting vulnerabilities:** gaining root access or spying without user knowledge.
+- **Malware functions (payloads):**
+  - **Rooting:** gaining full control of the device.
+  - **Premium SMS/calls**
+  - **Data theft**
+  - **Botnets:** using the phone as part of a network for attacks.
+  - **Cryptojacking** 
+  - **Ransomware:** locking the phone and demanding money to unlock it.
+
