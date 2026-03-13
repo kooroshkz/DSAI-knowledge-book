@@ -1,0 +1,33 @@
+-**Model Performance**: Model architecture, Loss function, Optimizer, Training data
+- **Data Collection**:
+    - **Hand-curated datasets**: researchers manually collect images in small controlled conditions, like COREL, Caltech, PASCAL 
+        - **Pros**: high-quality labels, clean images, carefully chosen 
+        - **Cons**: strong selection bias, narrow worldview, unrealistic examples, lab conditions, same camera, lighting, pose Models trained here learn idealized reality
+    - **Web + crowdsourcing**: scrape images from search engines, annotate with Mechanical Turk, pay people small amounts Different annotation motivations: money, fun (games), access (CAPTCHAs), curiosity 
+        - **Pros**: much larger datasets, more diversity, scalable 
+        - **Cons**: noisy labels, cultural bias, annotator disagreement, instructions shape labels, search queries inject bias 
+        - **Important experiment**: Humans have biases, don’t always follow instructions, disagree even on simple tasks Human labels are not neutral
+    - **Synthetic / virtual data**: used in robotics, navigation, action recognition 
+        - **Pros**: perfect labels, infinite data, full control 
+        - **Cons**: domain gap, unrealistic textures, bad human behavior simulation 
+        - **This leads to**: model works in simulation fails in real world
+    - **Internet-scale weak labels**: examples: CLIP, LAION How: scrape images + alt-text, minimal filtering, no manual labels 
+        - **Properties**: billions of samples, extremely noisy, captions incomplete or wrong, harmful content possible, many datasets not public Labels are now weak signals, not ground
+
+- **Dataset bias**:
+    - **Representation bias**: Some groups appear less often: elderly faces, rural scenes, non-Western contexts **Result**: worse performance on underrepresented groups
+    - **Sampling bias**: Flickr → Western, wealthy users, Instagram → young demographics **Result**: model learns *who posts*, not *who exists*
+    - **Measurement bias**: differences in camera type, resolution, viewpoint, lighting **E.g**: training on phone images, testing on CCTV
+    - **Label / annotation bias**: humans bring assumptions: “cup” vs “mug”, ambiguous categories, cultural differences
+    - **Context / co-occurrence bias**: objects always appear in same context so model learns background instead of object
+    - **Temporal bias**: datasets age: cars change, fashion changes, cities change, old datasets = outdated world
+
+- **Model shortcuts learning**: a feature correlated with the label but not truly meaningful used to improves training accuracy like background, texture, watermarks, camera artifacts. This is **not a model flaw** — it’s a **data problem**.
+- **Adversarial noise**: tiny, structured, not random. Works: model relies on non-robust features and gradient shows which pixels matter
+- **Distribution shift** solutions:
+    - **Collect better data**: expensive, slow, often impossible, train on data that matches test data, Problems: expensive, slow, often impossible
+    - **Data augmentation / domain randomization**: add noise, color shifts, blur, geometry changes to make training data more diverse Helps but not enough
+    - **Domain adaptation via style transfer**: use GANs/CycleGAN to make source data look like target data Works well for visual style but fails for semantic changes, geometry, object presence
+    - **Domain adaptation in feature space**: align feature distributions by training domain classifier and forcing feature extractor to confuse it Goal: domain-invariant features
+- **Adaptation** Best to worst: 1. representative data 2. adaptation 3. augmentation
+- **Societal impact & ethics**: models do what data tells them Bad data → harmful systems like racist chatbots, biased face recognition, wrongful arrests, privacy violations

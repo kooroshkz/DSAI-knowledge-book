@@ -1,0 +1,1 @@
+![Image 1](../../Files/first-semester/focs/1.jpg)

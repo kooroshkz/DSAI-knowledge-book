@@ -1,0 +1,180 @@
+- **Statistics** $\to$ independent variables (features)
+- **Machine Learning** $\to$ dependent variable (label/outcome)
+- **Simulating data**:
+    - Test method performance with known truth
+    - Test analysis before having real data
+    - Forces you to consider all assumptions
+- **Random Variables**:
+    - You don’t know its value until you *observe* or *sample* it.
+    - The value is not fixed, it can change and depends on some random process.
+    - Each value has a probability of happening (based on its distribution).
+- **Categorical Variables**: with BarPlots (frequency counts)
+    - **Nominal**: Just names, no order (e.g., color, Gender).
+        - Can have **Median** and **Mode**.
+    - **Ordinal**: ordered categories (e.g., BSc < MSc < PhD rating scales like 1-5 stars).
+- **Numerical Variables**:
+    - **Interval**: Continuous values with meaningful differences (e.g., temperature, time).
+    - **Ratio**: Like interval but with a true zero point. We can multiply and devide (e.g., weight, price).
+
+- For Numerical Variables, **BarPlots** are not appropriate, use **Histograms** or **BoxPlots** instead.
+- **Density plots**: Linear curved Histograms, Like moving average.
+    - **Kernel Density Plot**: The total area under the curve is 1.
+- **Probability Distributions**:
+    - **Continuous** $\to$ Use Probability Density Function (PDF) like **Normal Distribution**.
+    - **Discrete** $\to$ Use Probability Mass Function (PMF) like **Binomial Distribution**.
+
+- **Bivariate**: describe two variables like **Correlation** unlike univariate.
+
+- **Variance**: Measure of how much the values of a variable differ from the mean.
+    - The variance ($s^2$) is the square of the standard deviation ($s$)
+    - $s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2$
+- **Standard Deviation**: Square root of variance, gives a sense of spread in the same units as the data.
+- **Frequentist testing steps**
+    - Make hypotheses
+        - One sided: H0 $\to$ Apple is faster than Xiaomi ($H_0 : \mu_A > \mu_X$)
+        - Two sided: H0 $\to$ One of Apple or Xiaomi is faster than the other. ($H_0 : \mu_A \neq \mu_X$)
+    - Collect data
+    - Calculate statistics
+    - Inference
+    - Draw conclusions
+- **t-test**: number that tells us how far our sample result is from what the null hypothesis expects
+    - Standard Error $(SE) = \frac{\sigma}{\sqrt{n}}$
+    - $t = \frac{\bar{x} - \mu}{SE} = \frac{\text{observed difference} - \text{expected difference (from } H_0\text{)}}{\text{standard error}}$
+    - Where $\bar{x}$ is the sample mean, $\mu$ is the population mean.
+
+- **Tests**:
+    - **One-sample t-test**: Checks if the mean of your sample is equal to some specific value.
+        - **Null hypothesis**: The average value in the population is equal to a known number.
+        - **Formula**: $t = \frac{\bar{x} - \mu_{null}}{SE}$
+    - **Chi-squared test for independence**
+        - **Null hypothesis**: The two categorical variables are independent.
+        - **Formula**: $X^2 = \sum \frac{(Observed - Expect)^2}{E}$
+    - **Two-sample t-test for independent samples**
+        - **Null hypothesis**: The means of two independent groups are equal.
+        - **Formula**: $t = \frac{\bar{x}_1 - \bar{x}_2}{SE}$, where $SE$ is the standard error of the difference between the two means.
+    - **Two-sample t-test for paired samples**
+        - **Null hypothesis**: The means of two related groups are equal.
+        - **Formula**: $t = \frac{\bar{d}}{SE_d}$, where $\bar{d}$ is the mean of the differences and $SE_d$ is the standard error of the differences.
+    - **Linear regression**
+
+- **Types of distributions**:
+    - **Population distribution**: The distribution of a variable in the entire population.
+    - **Sample distribution**: The distribution of a variable in a specific sample.
+    - **Sampling distribution**: The distribution of a statistic (like the sample mean) across all possible samples of a given size from the population.
+
+- **Central Limit Theorem**: Sample means form a normal shape, even if the data isn’t normal
+
+- **p-value**: The chance of observing the data (if low chance, we reject null hypothesis)
+- **Errors**:
+    - **Type I error**: Rejecting the null hypothesis when it is true (false positive).
+    - **Type II error**: Failing to reject the null hypothesis when it is false (false negative).
+        - **Power**: The probability of correctly rejecting a false null hypothesis (1 - Type II error rate).
+        - Chance that a test correctly finds a real effect when there actually is one.
+
+- **The Empirical Cycle**
+    - **Observation**: You notice something interesting or strange.
+    - **Induction**: You form a hypothesis based on your observations.
+    - **Deduction**: Make testable predictions from your hypothesis.
+    - **Testing**: You conduct experiments or gather data to test your predictions.
+    - **Evaluation**: Analyze the results to see if they support or refute your hypothesis.
+
+- **Fraud** in resarch:
+    - **Fabrication**: Making up data or results.
+    - **Falsification**: Manipulating research materials, equipment, or processes to misrepresent results.
+    - **Plagiarism**: Using someone else's work or ideas without proper attribution.
+
+- **Questionable research practices (QRPs)**
+    - **Inappropriate publication practices**: How you publish and present results
+        - **Salami slicing**: Publishing multiple papers from the same dataset (Wastes journal space, overstates how much evidence exists.)
+        - **HARKing** (Hypothesizing After the Results are Known): Turns an exploratory finding into a fake “confirmation”.
+            - **Exploratory**: When you explore data to find patterns, you’re generating new ideas or hypotheses.
+            - **Confirmatory**: Testing a hypothesis you made before seeing the data.
+        - **Selective reporting**: Only reporting results that support your hypothesis (Gives a false success rate; readers think the effect is stronger than it really is.)
+        - **Cherry-picking**: Selectively reporting results that support your hypothesis
+    - **Messing up the empirical cycle**: Skipping or re-using steps of the research process
+        - **re-testing old data without new data**: Using old data to test new hypotheses without collecting new data (results aren’t truly confirmed.)
+    - **P-hacking**: Tweaking the analysis until the p-value < 0.05
+        - **rounding p**: Rounding p-values to make them appear significant
+        - **Adjusting outlier criteria**: Altering how outliers are defined to affect results. Optimal ways:
+            - Outliers are values above Q3 + 1.5 × IQR or below Q1 − 1.5 × IQR
+            - Values more than 3 or 2.5 standard deviations from the mean
+        - **Selecting levels of the independent variable**: Test only a subset of conditions that show an effect.
+        - **Selecting from multiple dependent variables**: Measure ten outcomes but only report the one that’s significant. $\to$ false positive
+        - **Adding/removing covariates**: Try different variable combination and report the one that gives a significant result.
+        - **Sequential testing with optional stopping**: Adding samples and check p-value till somewhere drops below 0.05 and stop adding samples.
+            - It start from low sample size and increase it until the p-value is significant, so not always increase sample size.
+
+- P-hacing is like overfitting in ML, the same method in ML is called 'performance hacking'.
+- Optional stopping $\to$ Error typ I $\to$ False positive
+
+- **Quality of outlets and publications**:
+    - “Impact factor”: how often are papers in a certain outlet (journal, conference, etc.) cited
+    - “H-index”: h papers that have each been cited at least h times
+- **Predatory journals**:
+    - No legit quality control
+    - Fast publication times
+    - Charging a (small) fee
+- **Paper Mill**: Companies or groups that make fake research papers for people with plagiarism or make up results that are not real (fabrication).
+- **Conference proceedings**:
+    - Find a good place to publish (venue or outlet like a journal or conference)
+    - meta-reviewer checks the reviews and makes a decision
+    - **Desk rejection** if wasn's a good fit
+    - Else, editor sends it to 1 to 4 peer reviewers to evaluate it carefully
+        - **Peer review**:
+            - **Single-blind**: reviewers know the authors, but not vice versa
+            - **Double-blind**: neither reviewers nor authors know each other
+            - **Open review**: both know each other
+            - Reviewers are not paid, and don't asses **reproducibility** (can the results be reproduced by others)
+- **Null effects**: when the results show no significant or intresting effect, often not published  
+    - **post-hoc explanations**: explanations after the fact, often not very convincing
+- **QRP** will make cognitive biases like **Confirmation bias** or **Hindsight bias** (after something happens people start saying: Yeah I could feel it was going to be like that)
+
+- **Consequences of QRPs**: Replicability issues, Overestimation performance, Distrust in science
+- **Avoid QRPs**:
+    - **Better training**: for researchers, reviewers, and editors
+    - **21-word solution**: Always say how you chose sample size, removed data, changed methods, and measured things.
+        - **Error of omission** = forgetting or leaving something out by mistake.
+        - **Error of commission** = doing something wrong or wrongfully on purpose.
+    - **Blind analysis**
+    - **Preregistration**: Write your study plan before starting to prevent changing it later.
+        - Develop Idea $\to$ Design Study $\to Peer review 1$\to$Data collection$\to$Write Report$\to$Peer review 2$\to$ Publish
+    - **Multiverse or sensitivity analysis:** Checking results using different methods or ways of analyzing data to see if the findings stay the same and are reliable.
+
+- **Challenges of open data**:
+    - **No time**: after a study is done the next one needs to start (publish or perish)
+    - **No access**: computer crash, collaborator left…
+    - **Privacy**: no consent to share the data was asked
+    - **Proprietary data**: companies don’t want to share their data
+- **Reproducibility:** Uses the same data and tools as the first study, they should get the same results.
+- **Replicability:** Follows the same steps as the first study but collects new data, they should get similar results.
+- **Avoid Cherry Picking** $\to$ Seed-averaging 
+- **Paper review checklist**:
+    - **General Content**: Introduction point to RQ, Main finding is clear
+    - **Scientific Artifacts**: They refrenced artifacts and licenses
+    - **Computational Experiments**: Clear results and analysis
+    - **Human Participants**: Info on participants demographic and recruitment
+    - **AI assistance**
+
+- **The Research Proposal**:
+    - **Motivation**: Research idea and executive summary
+    - **Application**: For thesis and funding
+    - **Types**:
+        - Reproduce/replicate
+        - Same method in new domain
+        - New theoretical framework
+    - **Structure**:
+        - Background/context
+        - Research questions
+        - Contributions: New things or knowledge your research will add to science
+        - Methodology
+        - Planning
+        - Resources
+
+- **SMART Proposal**: Specific, Measurable, Achievable, Relevant, Time-bound
+- **Datasheets for datasets**:
+    - **Motivation**
+    - **Dataset composition** (recommended splits, evaluation metrics)
+    - **Data collection process** (time period, sampling strategy, participant information)
+    - **Legal & Ethical considerations** (Connsent obtained, privacy, compliance with GDPR)
+- **Annotator aggregation**: Combine annotations from multiple annotators to improve reliability and reduce bias. We call this term one model and is usally done with **mean** to calculate a single **gold score**.
+- **Ablation studies** with methods like **BackFlip** to understand the impact of different components in the model.

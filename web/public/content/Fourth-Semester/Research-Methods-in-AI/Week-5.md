@@ -1,0 +1,31 @@
+- **Challenges of open data**:
+    - **No time**: after a study is done the next one needs to start (publish or perish)
+    - **No access**: computer crash, collaborator left…
+    - **Privacy**: no consent to share the data was asked
+    - **Proprietary data**: companies don’t want to share their data
+- **Reproducibility:** Uses the same data and tools as the first study, they should get the same results.
+- **Replicability:** Follows the same steps as the first study but collects new data, they should get similar results.
+- **Avoid Cherry Picking** $\to$ Seed-averaging 
+- **Paper review checklist**:
+    - **General Content**: Introduction point to RQ, Main finding is clear
+    - **Scientific Artifacts**: They refrenced artifacts and licenses
+    - **Computational Experiments**: Clear results and analysis
+    - **Human Participants**: Info on participants demographic and recruitment
+    - **AI assistance**
+
+- **The Research Proposal**:
+    - **Motivation**: Research idea and executive summary
+    - **Application**: For thesis and funding
+    - **Types**:
+        - Reproduce/replicate
+        - Same method in new domain
+        - New theoretical framework
+    - **Structure**:
+        - Background/context
+        - Research questions
+        - Contributions: New things or knowledge your research will add to science
+        - Methodology
+        - Planning
+        - Resources
+
+- **SMART Proposal**: Specific, Measurable, Achievable, Relevant, Time-bound

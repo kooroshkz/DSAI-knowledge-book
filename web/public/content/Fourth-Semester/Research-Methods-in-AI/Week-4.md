@@ -1,0 +1,32 @@
+- **Quality of outlets and publications**:
+    - “Impact factor”: how often are papers in a certain outlet (journal, conference, etc.) cited
+    - “H-index”: h papers that have each been cited at least h times
+- **Predatory journals**:
+    - No legit quality control
+    - Fast publication times
+    - Charging a (small) fee
+- **Paper Mill**: Companies or groups that make fake research papers for people with plagiarism or make up results that are not real (fabrication).
+- **Conference proceedings**:
+    - Find a good place to publish (venue or outlet like a journal or conference)
+    - meta-reviewer checks the reviews and makes a decision
+    - **Desk rejection** if wasn's a good fit
+    - Else, editor sends it to 1 to 4 peer reviewers to evaluate it carefully
+        - **Peer review**:
+            - **Single-blind**: reviewers know the authors, but not vice versa
+            - **Double-blind**: neither reviewers nor authors know each other
+            - **Open review**: both know each other
+            - Reviewers are not paid, and don't asses **reproducibility** (can the results be reproduced by others)
+- **Null effects**: when the results show no significant or intresting effect, often not published  
+    - **post-hoc explanations**: explanations after the fact, often not very convincing
+- **QRP** will make cognitive biases like **Confirmation bias** or **Hindsight bias** (after something happens people start saying: Yeah I could feel it was going to be like that)
+
+- **Consequences of QRPs**: Replicability issues, Overestimation performance, Distrust in science
+- **Avoid QRPs**:
+    - **Better training**: for researchers, reviewers, and editors
+    - **21-word solution**: Always say how you chose sample size, removed data, changed methods, and measured things.
+        - **Error of omission** = forgetting or leaving something out by mistake.
+        - **Error of commission** = doing something wrong or wrongfully on purpose.
+    - **Blind analysis**
+    - **Preregistration**: Write your study plan before starting to prevent changing it later.
+        - Develop Idea $\to$ Design Study $\to Peer review 1$\to$Data collection$\to$Write Report$\to$Peer review 2$\to$ Publish
+    - **Multiverse or sensitivity analysis:** Checking results using different methods or ways of analyzing data to see if the findings stay the same and are reliable.

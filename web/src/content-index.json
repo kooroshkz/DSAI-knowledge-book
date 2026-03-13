@@ -1,0 +1,436 @@
+[
+  {
+    "name": "First-Semester",
+    "courses": [
+      {
+        "name": "Essentials-of-Computing-Systems",
+        "files": [
+          "I-Computer-Architecture.md",
+          "II-Base-numbers.md",
+          "III-Logic-and-Boolean-Equation.md",
+          "IV-Digital-Systems-Design.md",
+          "V-Computer-Architecture.md",
+          "VI-Operating System.md"
+        ]
+      },
+      {
+        "name": "Foundations-of-Computer-Science",
+        "files": [
+          "I-Set-Theory.md",
+          "III-Graph.md",
+          "II_Induction.md",
+          "IV-Trees.md",
+          "V-Combinatorics.md",
+          "VI-Countability.md",
+          "VII. Languages.md"
+        ]
+      },
+      {
+        "name": "Linear-Algebra-I",
+        "files": [
+          "Notes.md",
+          "README.md"
+        ]
+      },
+      {
+        "name": "Orientation-of-AI",
+        "files": [
+          "Lecture-1.md",
+          "Lecture-2.md",
+          "Lecture-3.md",
+          "Lecture-4.md",
+          "Lecture-5.md",
+          "README.md"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Second-semester",
+    "courses": [
+      {
+        "name": "Algorithms-and-Data-Structures",
+        "files": [
+          "Lecture1.md",
+          "Lecture10.md",
+          "Lecture11.md",
+          "Lecture12.md",
+          "Lecture2.md",
+          "Lecture3.md",
+          "Lecture4.md",
+          "Lecture5.md",
+          "Lecture6.md",
+          "Lecture7.md",
+          "Lecture8.md",
+          "Lecture9.md",
+          "Syntax.md"
+        ]
+      },
+      {
+        "name": "Calculus II",
+        "files": [
+          "1-ComplexNumbers.md",
+          "2-Sequences.md",
+          "3-Integration.md",
+          "4-Differentiation.md",
+          "5-Applications.md",
+          "Notes.md"
+        ]
+      },
+      {
+        "name": "Databases",
+        "files": [
+          "10_Transactions.md",
+          "11_BigData-NoSQL.md",
+          "1_Relational-DBs.md",
+          "2_ER-Diagram.md",
+          "3_DDL.md",
+          "4_Queries.md",
+          "5_Join.md",
+          "7_RA_Queries.md",
+          "8_Normalization.md",
+          "9_Storage_Indexing.md"
+        ]
+      },
+      {
+        "name": "Introduction-to-Cognative-Science",
+        "files": [
+          "Lecture1.md",
+          "Lecture10.md",
+          "Lecture11.md",
+          "Lecture2.md",
+          "Lecture3.md",
+          "Lecture4.md",
+          "Lecture5.md",
+          "Lecture6.md",
+          "Lecture7.md",
+          "Lecture8.md",
+          "Lecture9.md",
+          "Notes.md",
+          "SampleQuestions.md"
+        ]
+      },
+      {
+        "name": "Introduction-to-logic",
+        "files": [
+          "1.md",
+          "10.md",
+          "12.md",
+          "2.md",
+          "3.md",
+          "4.md",
+          "5.md",
+          "6.md",
+          "7.md",
+          "8.md",
+          "9.md",
+          "README.md"
+        ]
+      },
+      {
+        "name": "Linear-Algebra-II",
+        "files": [
+          "Lecture I.md",
+          "Lecture II.md",
+          "Lecture III.md",
+          "Lecture IV.md",
+          "Lecture V.md",
+          "Lecture VI.md",
+          "Lecture VII.md",
+          "README.md"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Third-Semester",
+    "courses": [
+      {
+        "name": "Human-Agent-Interaction",
+        "files": [
+          " Socially-Interactive-Agents.md",
+          "Exam-Notes.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-1.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-10.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-11.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-12.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-13.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-2.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-3.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-4.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-5.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-6.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-7.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-8.md",
+          "Human-Robot-Interaction—An-Introduction/Chapter-9.md",
+          "Lecture-1.md",
+          "Lecture-2.md",
+          "Lecture-3.md",
+          "Lecture-4.md",
+          "Lecture-5.md",
+          "Lecture-6.md",
+          "README.md",
+          "Speech and-Language-Processing-15.md"
+        ]
+      },
+      {
+        "name": "Languages-and-Computation",
+        "files": [
+          "Archive-from-Automata-Theory/1.md",
+          "Archive-from-Automata-Theory/10.md",
+          "Archive-from-Automata-Theory/11.md",
+          "Archive-from-Automata-Theory/12.md",
+          "Archive-from-Automata-Theory/13.md",
+          "Archive-from-Automata-Theory/14.md",
+          "Archive-from-Automata-Theory/2.md",
+          "Archive-from-Automata-Theory/3.md",
+          "Archive-from-Automata-Theory/4.md",
+          "Archive-from-Automata-Theory/5.md",
+          "Archive-from-Automata-Theory/6.md",
+          "Archive-from-Automata-Theory/7.md",
+          "Archive-from-Automata-Theory/8.md",
+          "Archive-from-Automata-Theory/9.md",
+          "Archive-from-Automata-Theory/Notes.md",
+          "Exam.md",
+          "Lecture-1.md",
+          "Lecture-10.md",
+          "Lecture-11.md",
+          "Lecture-12.md",
+          "Lecture-13.md",
+          "Lecture-2.md",
+          "Lecture-3.md",
+          "Lecture-4.md",
+          "Lecture-5.md",
+          "Lecture-6.md",
+          "Lecture-7.md",
+          "Lecture-8.md",
+          "Lecture-9.md",
+          "Notes.md"
+        ]
+      },
+      {
+        "name": "Software-Development",
+        "files": [
+          "Notes.md",
+          "Week-1.md",
+          "Week-10.md",
+          "Week-11.md",
+          "Week-12.md",
+          "Week-2&3.md",
+          "Week-4.md",
+          "Week-5.md",
+          "Week-6.md",
+          "Week-7.md",
+          "Week-8.md",
+          "Week-9.md"
+        ]
+      },
+      {
+        "name": "Statistics",
+        "files": [
+          "ExamNotes.md",
+          "Lecture-1.md",
+          "Lecture-10.md",
+          "Lecture-11.md",
+          "Lecture-12.md",
+          "Lecture-13.md",
+          "Lecture-2.md",
+          "Lecture-3.md",
+          "Lecture-4.md",
+          "Lecture-5.md",
+          "Lecture-6.md",
+          "Lecture-7.md",
+          "Lecture-8.md",
+          "Lecture-9.md"
+        ]
+      },
+      {
+        "name": "Symbolic-AI",
+        "files": [
+          "Book Summaries/Chapter-1.md",
+          "Book Summaries/Chapter-10.md",
+          "Book Summaries/Chapter-13.md",
+          "Book Summaries/Chapter-17.md",
+          "Book Summaries/Chapter-2.md",
+          "Book Summaries/Chapter-3.md",
+          "Book Summaries/Chapter-5.md",
+          "Book Summaries/Chapter-7.md",
+          "Book Summaries/Chapter-8.md",
+          "Book Summaries/Chapter-9.md",
+          "Java-recap.md",
+          "Material.md",
+          "Notes.md",
+          "Prolog.md",
+          "SFOL.md",
+          "Slides Summaries/Week-1.md",
+          "Slides Summaries/Week-2.md",
+          "Slides Summaries/Week-3.md",
+          "Slides Summaries/Week-4.md",
+          "Slides Summaries/Week-5.md"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fourth-Semester",
+    "courses": [
+      {
+        "name": "Cognition-and-Computation",
+        "files": [
+          "Lecture-3.md",
+          "Lecture1.md"
+        ]
+      },
+      {
+        "name": "Dutch",
+        "files": [
+          "A1/Chapter-1.md",
+          "A1/Chapter-2.md",
+          "A1/Chapter-3.md",
+          "A1/Chapter-4.md",
+          "A1/Chapter-5.md",
+          "A1/Chapter-6.md",
+          "A1/Chapter-7.md",
+          "A1/Chapter-8.md",
+          "A1/Chapter-9.md",
+          "A1/Final_Notes.md",
+          "A1/Mistakes.md",
+          "A2/Chapter-10.md",
+          "A2/Chapter-11.md",
+          "A2/Exam_notes.md"
+        ]
+      },
+      {
+        "name": "Machine-Learning",
+        "files": [
+          "Exam-Notes.md",
+          "Lecture-1.md",
+          "Lecture-10.md",
+          "Lecture-11.md",
+          "Lecture-12.md",
+          "Lecture-2.md",
+          "Lecture-3.md",
+          "Lecture-4.md",
+          "Lecture-5.md",
+          "Lecture-6.md",
+          "Lecture-7.md",
+          "Lecture-8.md",
+          "Lecture-9.md"
+        ]
+      },
+      {
+        "name": "Neural-Computing",
+        "files": [
+          "Final-Notes.md",
+          "Lecture-1.md",
+          "Lecture-10.md",
+          "Lecture-12.md",
+          "Lecture-2,3.md",
+          "Lecture-4,5.md",
+          "Lecture-6.md",
+          "Lecture-8.md",
+          "Project_Notes.md"
+        ]
+      },
+      {
+        "name": "Reinforcement-Learning",
+        "files": [
+          "Final-Notes.md",
+          "Formulas.md",
+          "Probability.md",
+          "Week-1.md",
+          "Week-10-11.md",
+          "Week-12.md",
+          "Week-13.md",
+          "Week-14.md",
+          "Week-2.md",
+          "Week-3.md",
+          "Week-4.md",
+          "Week-5-6-7.md"
+        ]
+      },
+      {
+        "name": "Research-Methods-in-AI",
+        "files": [
+          "Notes.md",
+          "Quiz.md",
+          "Week-1.md",
+          "Week-2.md",
+          "Week-3.md",
+          "Week-4.md",
+          "Week-5.md",
+          "Week-6.md"
+        ]
+      },
+      {
+        "name": "Security",
+        "files": [
+          "Final-Notes.md",
+          "Week-1.md",
+          "Week-10.md",
+          "Week-11.md",
+          "Week-13.md",
+          "Week-14.md",
+          "Week-2.md",
+          "Week-3.md",
+          "Week-4.md",
+          "Week-5.md",
+          "Week-6.md",
+          "Week-7.md",
+          "Week-8.md",
+          "Week-9.md",
+          "Workshops/Assembly.md",
+          "Workshops/C.md",
+          "Workshops/GDB.md",
+          "Workshops/bash.md"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fifth-Semester",
+    "courses": [
+      {
+        "name": "Computer-Vision",
+        "files": [
+          "Lecture-1.md",
+          "Lecture-10.md",
+          "Lecture-11.md",
+          "Lecture-12.md",
+          "Lecture-2.md",
+          "Lecture-3.md",
+          "Lecture-4.md",
+          "Lecture-5.md",
+          "Lecture-6.md",
+          "Lecture-7.md",
+          "Lecture-8.md",
+          "Lecture-9.md"
+        ]
+      },
+      {
+        "name": "Concepts-of-Programming-Languages",
+        "files": [
+          "Final_Notes.md",
+          "Lecture-1.md",
+          "Lecture-2.md",
+          "Lecture-3.md",
+          "Lecture-4.md",
+          "Lecture-5.md",
+          "Lecture-6.md",
+          "OCaml.md"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sixth-Semester",
+    "courses": [
+      {
+        "name": "AI-and-Ethics",
+        "files": [
+          "Lecture-1.md"
+        ]
+      }
+    ]
+  }
+]

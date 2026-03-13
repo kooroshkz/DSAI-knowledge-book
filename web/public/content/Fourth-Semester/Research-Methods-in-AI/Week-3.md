@@ -1,0 +1,35 @@
+- **The Empirical Cycle**
+    - **Observation**: You notice something interesting or strange.
+    - **Induction**: You form a hypothesis based on your observations.
+    - **Deduction**: Make testable predictions from your hypothesis.
+    - **Testing**: You conduct experiments or gather data to test your predictions.
+    - **Evaluation**: Analyze the results to see if they support or refute your hypothesis.
+
+- **Fraud** in resarch:
+    - **Fabrication**: Making up data or results.
+    - **Falsification**: Manipulating research materials, equipment, or processes to misrepresent results.
+    - **Plagiarism**: Using someone else's work or ideas without proper attribution.
+
+- **Questionable research practices (QRPs)**
+    - **Inappropriate publication practices**: How you publish and present results
+        - **Salami slicing**: Publishing multiple papers from the same dataset (Wastes journal space, overstates how much evidence exists.)
+        - **HARKing** (Hypothesizing After the Results are Known): Turns an exploratory finding into a fake “confirmation”.
+            - **Exploratory**: When you explore data to find patterns, you’re generating new ideas or hypotheses.
+            - **Confirmatory**: Testing a hypothesis you made before seeing the data.
+        - **Selective reporting**: Only reporting results that support your hypothesis (Gives a false success rate; readers think the effect is stronger than it really is.)
+        - **Cherry-picking**: Selectively reporting results that support your hypothesis
+    - **Messing up the empirical cycle**: Skipping or re-using steps of the research process
+        - **re-testing old data without new data**: Using old data to test new hypotheses without collecting new data (results aren’t truly confirmed.)
+    - **P-hacking**: Tweaking the analysis until the p-value < 0.05
+        - **rounding p**: Rounding p-values to make them appear significant
+        - **Adjusting outlier criteria**: Altering how outliers are defined to affect results. Optimal ways:
+            - Outliers are values above Q3 + 1.5 × IQR or below Q1 − 1.5 × IQR
+            - Values more than 3 or 2.5 standard deviations from the mean
+        - **Selecting levels of the independent variable**: Test only a subset of conditions that show an effect.
+        - **Selecting from multiple dependent variables**: Measure ten outcomes but only report the one that’s significant. $\to$ false positive
+        - **Adding/removing covariates**: Try different variable combination and report the one that gives a significant result.
+        - **Sequential testing with optional stopping**: Adding samples and check p-value till somewhere drops below 0.05 and stop adding samples.
+            - It start from low sample size and increase it until the p-value is significant, so not always increase sample size.
+
+- P-hacing is like overfitting in ML, the same method in ML is called 'performance hacking'.
+- Optional stopping $\to$ Error typ I $\to$ False positive

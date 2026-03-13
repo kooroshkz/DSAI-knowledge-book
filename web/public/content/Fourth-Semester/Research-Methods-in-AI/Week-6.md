@@ -1,0 +1,7 @@
+- **Datasheets for datasets**:
+    - **Motivation**
+    - **Dataset composition** (recommended splits, evaluation metrics)
+    - **Data collection process** (time period, sampling strategy, participant information)
+    - **Legal & Ethical considerations** (Connsent obtained, privacy, compliance with GDPR)
+- **Annotator aggregation**: Combine annotations from multiple annotators to improve reliability and reduce bias. We call this term one model and is usally done with **mean** to calculate a single **gold score**.
+- **Ablation studies** with methods like **BackFlip** to understand the impact of different components in the model.

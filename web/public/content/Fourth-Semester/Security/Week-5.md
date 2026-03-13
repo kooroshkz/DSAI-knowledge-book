@@ -1,0 +1,57 @@
+- Data travels through many **hops** (e.g., your PC → home router → university router → server).
+- **Spoofing** $\to$ Data can be modified
+- **Lack of confidentiality** $\to$ Data can be read
+- **Lack of authenticity** $\to$ Fake data can be sent
+- **Firewall** : Controls data entering or leaving a networkin boundary (like a router/devide)
+- **Packet-filtering Firewalls** (Common): Apply **rules** to packets, actions can be: ACCEPT, REJECT, or DROP packets
+  - **Stateless:** Checks packets individually, no memory of past packets.
+  - **Stateful:** Keeps track of connections, more secure.
+  - **Disadvantages:**
+    - Cannot block all attacks.
+    - Can be tricked by hiding traffic in allowed ports.
+    - Complex rule sets can be hard to manage.
+    - Only works if traffic passes through firewall (mobile data bypasses it).
+- **Proxy Firewalls** (Application - Layer 7):
+  - Acts as an intermediary between client and server which can filter traffic more intelligently than packet-filtering firewalls.
+  - Can be **explicit** (client knows about proxy) or **transparent** (client doesn’t know).
+  - Can require authentication.
+  - **Advantages:**
+    - Logs all activity (good for accountability).
+    - Can cache content to reduce bandwidth.
+    - Filters traffic more intelligently.
+  - **Disadvantages:**
+    - Complex to set up and maintain.
+    - Can slow down performance.
+    - Must trust proxy with sensitive data (proxy sees all traffic).
+- **Tiered Architecture**: Combining different firewalls (packet-filtering + proxy) for better protection between internet and internal network.
+
+---
+
+- **Intrusion Detection Systems (IDS)**:  monitor network or system events to detect unauthorized activity.
+  - **Base Rate Fallacy in IDS**:
+    - Produce many false alarms.
+    - Increasing sensitivity $\to$ reduces missed attacks but $\to$ increases false positives.
+    - Decision on sensitivity depends on **threat model** and **risk tolerance**.
+  - **NIDS (Network-based IDS):** Listens to network traffic at key points like routers or switches. Example tools: Snort, Suricata.
+  - **HIDS (Host-based IDS):** Monitors activities on a specific device (logs, files, system calls). Example tool: OSSEC.
+- **Intrusion Prevention Systems (IPS)** can also take action to stop attacks (e.g., block traffic).
+- **Event Analysis Methods**
+  - **Signature-based Detection**:
+    - Uses known patterns (signatures) of attacks to identify malicious activity.
+    - Fast and accurate if signatures are updated.
+    - Can miss new or unknown attacks.
+    - Example: Detects ping scans (nmap) by looking for empty ICMP packets.
+  - **Anomaly-based Detection**:
+    - Learns normal behavior and alerts on deviations.
+    - Can detect new attacks.
+    - Hard to configure and can cause false alarms.
+    - Requires good training data.
+
+---
+- **Tunneling**: Encapsulate your packets inside another secure tunnel through a trusted middleman.
+  - **Proxy:** Tunnels for specific applications.
+  - **VPN:** Tunnels all network traffic.
+- **TOR** (Onion Routing)
+  - Multi-layer tunneling (tunnels inside tunnels).
+  - Each relay removes one encryption layer, no single node knows the full path.
+  - Provides strong anonymity but slower.

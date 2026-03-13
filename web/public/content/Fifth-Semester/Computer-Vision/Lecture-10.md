@@ -1,0 +1,13 @@
+**contrastive learning is the key tool** that makes multimodal learning work
+- **modality**: a type of data like images, text, sound, human are **multimodal**
+- **Retrieval**: simple, can test representation quality, scales well, generalizes. With good embedings, classification, captioning, generation become easier
+- **encoder models**: one encoder for text/images output vectors, compare with similarity, no mixing inside network. Meet only at loss
+- **Contrastive Language–Image Pretraining** (CLIP): takes image–text pairs, embeds image and text separately, pulls matching pairs together, pushes mismatched pairs apart by Vision Transformer (image) or LLM (text) Loss: contrastive loss learns: shared embedding space, where images and text live together This lets us do: zero-shot classification, retrieval, transfer learning
+- **Zero-shot classification with CLIP**: Turn class names into sentences, encode all sentences, encode image, pick text with highest similarity
+- **CLIP limitations**: bad at counting, fine-grained reasoning, relies on huge web data, alignment is weak for complex logic
+- **Joint encoder models**: instead of separate encoders, tokenize image/text, mix tokens together, use attention across modalities. Lets model learn deep interactions, grounding, compositional reasoning.
+- **Early fusion**: mix modalities early, richer interactions and more expensive
+- **Late fusion**: process separately, combine later, more efficient, weaker interaction
+- **dual encoder**: separate processing, compare embeddings, good for retrieval, scalable
+- **joint encoder**: modalities interact inside model, good for reasoning, expensive, harder to scale
+- **Model stitching**: train multimodal models with less data: take pretrained vision model, take pretrained language model, freeze both, learn small mapping network, align representations. Cheap and effective.
