@@ -12,7 +12,10 @@
 
 **Filter kernel** $\to$ Weighted Average of Neighbors like
 
-$$K = \frac{1}{9} \begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{bmatrix}$$
+$$K = \frac{1}{9} \begin{bmatrix}
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & 1 \end{bmatrix}$$
 
 and we apply it to each pixel:
 
@@ -31,7 +34,13 @@ and we apply it to each pixel:
 
 * Instead of averaging, we can design filters to **highlight changes**. Example sharpening filter:
 
-$$\text{Filter Kernel} = \begin{bmatrix} 0 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 0 \end{bmatrix} - \frac{1}{9} \begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{bmatrix}$$
+$$\text{Filter Kernel} = \begin{bmatrix}
+0 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 0 \end{bmatrix} - \frac{1}{9} \begin{bmatrix}
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & 1 \end{bmatrix}$$
 
 This keeps the center pixel strong but subtracts the average of neighbors → edges stand out.
 
@@ -68,11 +77,17 @@ $$\theta(x,y) = \arctan\left(\frac{\partial I / \partial y}{\partial I / \partia
 
 * Gradient in **x** direction:
 
-$$\begin{bmatrix} 0 & 0 & 0 \\ -1 & 1 & 0 \\ 0 & 0 & 0 \end{bmatrix}$$
+$$\begin{bmatrix}
+0 & 0 & 0 \\
+-1 & 1 & 0 \\
+0 & 0 & 0 \end{bmatrix}$$
 
 * Gradient in **y** direction:
 
-$$\begin{bmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & -1 & 0 \end{bmatrix}$$
+$$\begin{bmatrix}
+0 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & -1 & 0 \end{bmatrix}$$
 
 Apply these filters → gives maps of intensity change → edges.
 
