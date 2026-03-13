@@ -8,7 +8,18 @@ export default function HomeView({ data }: { data: any[] }) {
     <div className="max-w-4xl mx-auto px-4 py-16 w-full">
       <div className="mb-10 lg:pl-4">
         <h1 className="text-3xl font-semibold mb-2">BSc Data Science and Artificial Intelligence</h1>
-        <p className="opacity-60 text-[15px]">Course notes by Koorosh Komeili Zadeh - Leiden University</p>
+        <p className="opacity-60 text-[15px]">
+          Course notes by{' '}
+          <a
+            href="https://kooroshkz.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="apple-accent hover:opacity-80 underline underline-offset-2"
+          >
+            Koorosh Komeili Zadeh
+          </a>{' '}
+          - Leiden University
+        </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

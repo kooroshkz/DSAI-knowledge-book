@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Book, Moon, Sun } from 'lucide-react';
 import contentData from './content-index.json';
 import SemesterView from './components/SemesterView';
@@ -7,10 +7,10 @@ import CourseView from './components/CourseView';
 import HomeView from './components/HomeView';
 
 function App() {
+  const location = useLocation();
   const [darkMode, setDarkMode] = useState(() => {
-    // If not set, check system preference. Otherwise default to false (light cream)
-    return localStorage.getItem('theme') === 'dark' || 
-      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    // Default is light mode unless the user explicitly chose dark mode.
+    return localStorage.getItem('theme') === 'dark';
   });
 
   useEffect(() => {
@@ -56,6 +56,27 @@ function App() {
 
       {/* Footer */}
       <footer className="py-6 mt-auto">
+        {location.pathname === '/' && (
+          <div className="max-w-4xl mx-auto px-4 text-[13px] opacity-60">
+            <a
+              href="https://github.com/kooroshkz/DSAI-knowledge-book"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 underline underline-offset-2"
+            >
+              Author words
+            </a>{' '}
+            and{' '}
+            <a
+              href="https://github.com/kooroshkz/DSAI-knowledge-book"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 underline underline-offset-2"
+            >
+              disclaimer
+            </a>
+          </div>
+        )}
       </footer>
     </div>
   );

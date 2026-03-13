@@ -32,7 +32,7 @@ $proj_L(\underline{v}) = \frac{\underline{v} \cdot \underline{u}}{||\underline{u
 
 ### The Orthogonal Decomposition Theorem
 
-![Image 3](../../../DSAI-knowledge-book/Files/second-semester/laII/3.jpg)
+![Image 3](../../Files/second-semester/laII/3.jpg)
 
 ### The Best Approximation
 

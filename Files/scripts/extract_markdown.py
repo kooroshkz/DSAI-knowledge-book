@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-"""
-Script to extract markdown cells from Jupyter notebooks and save them as .md files.
-Fixes LaTeX notation for GitHub markdown compatibility.
-
-Usage:
-    python extract_markdown.py <directory_path>
-"""
-
 import json
 import os
 import re
@@ -15,12 +6,6 @@ from pathlib import Path
 
 
 def fix_latex_for_github(content):
-    """Fix LaTeX notation to be compatible with GitHub markdown preview.
-    
-    GitHub requires display math to be on a single line: $$equation$$
-    with blank lines before and after for proper rendering.
-    """
-    
     # Step 1: Convert inline math $ ... $ containing \begin{}\end{} to display math
     # and merge adjacent inline math blocks that should be combined
     result_parts = []
@@ -239,7 +224,6 @@ def extract_markdown_from_notebook(notebook_path):
             else:
                 markdown_content = source
             
-            # Fix LaTeX for GitHub compatibility
             markdown_content = fix_latex_for_github(markdown_content)
             
             markdown_cells.append(markdown_content)
@@ -293,7 +277,7 @@ def process_directory(directory_path, remove_notebooks=True):
             markdown_cells = extract_markdown_from_notebook(notebook_path)
             
             if not markdown_cells:
-                print(f"  ⚠️  No markdown cells found")
+                print(f"No markdown cells found")
                 continue
             
             # Create output .md file with same name
