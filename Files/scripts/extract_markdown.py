@@ -212,10 +212,11 @@ def fix_latex_for_github(content):
     content = re.sub(r'(\$\$[^\$]+\$\$)\s+(\$\$[^\$]+\$\$)', merge_if_short, content)
     
     # Step 4: Move display math to their own lines with blank lines before/after
-    # Pattern: "text $$math$$ text" -> "text\n\n$$math$$\n\ntext"
-    # First, add newlines around $$...$$
-    content = re.sub(r'(\S.*?)\s*(\$\$[^\$]+\$\$)', r'\1\n\n\2', content)  # text before math
-    content = re.sub(r'(\$\$[^\$]+\$\$)\s*(.*?\S)', r'\1\n\n\2', content)  # text after math
+    # Use safer regex patterns that don't cause catastrophic backtracking
+    # Ensure blank line before $$ (when preceded by non-newline)
+    content = re.sub(r'([^\n])\s*\n?\s*(\$\$)', r'\1\n\n\2', content)
+    # Ensure blank line after $$ (when followed by non-newline)
+    content = re.sub(r'(\$\$)\s*\n?\s*([^\n\$])', r'\1\n\n\2', content)
     
     # Step 5: Clean up excessive empty lines
     content = re.sub(r'\n\n\n+', r'\n\n', content)

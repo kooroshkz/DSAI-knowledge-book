@@ -12,10 +12,14 @@
 
 **Filter kernel** $\to$ Weighted Average of Neighbors like
 
-$$K = \frac{1}{9} \begin{bmatrix}
+$$
+
+K = \frac{1}{9} \begin{bmatrix}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
-1 & 1 & 1 \end{bmatrix}$$
+1 & 1 & 1 \end{bmatrix}
+
+$$
 
 and we apply it to each pixel:
 
@@ -34,13 +38,17 @@ and we apply it to each pixel:
 
 * Instead of averaging, we can design filters to **highlight changes**. Example sharpening filter:
 
-$$\text{Filter Kernel} = \begin{bmatrix}
+$$
+
+\text{Filter Kernel} = \begin{bmatrix}
 0 & 0 & 0 \\
 0 & 2 & 0 \\
 0 & 0 & 0 \end{bmatrix} - \frac{1}{9} \begin{bmatrix}
 1 & 1 & 1 \\
 1 & 1 & 1 \\
-1 & 1 & 1 \end{bmatrix}$$
+1 & 1 & 1 \end{bmatrix}
+
+$$
 
 This keeps the center pixel strong but subtracts the average of neighbors → edges stand out.
 
@@ -53,21 +61,37 @@ This keeps the center pixel strong but subtracts the average of neighbors → ed
 
   1. Convert to grayscale by averaging R, G, B values:
 
-$$I_\text{gray}(x,y) = \frac{1}{3}(I_r + I_g + I_b)$$
+$$
+
+I_\text{gray}(x,y) = \frac{1}{3}(I_r + I_g + I_b)
+
+$$
 
 2. Compute **gradients** (changes in intensity):
 
-$$\nabla I = \left(\frac{dI}{dx}, \frac{dI}{dy}\right)$$
+$$
+
+\nabla I = \left(\frac{dI}{dx}, \frac{dI}{dy}\right)
+
+$$
 
 Approximation:
      $\frac{dI}{dx} \approx I(x,y) - I(x-1,y)$.
   3. Edge strength:
 
-$$E(x,y) = \sqrt{\left(\frac{dI}{dx}\right)^2 + \left(\frac{dI}{dy}\right)^2}$$
+$$
+
+E(x,y) = \sqrt{\left(\frac{dI}{dx}\right)^2 + \left(\frac{dI}{dy}\right)^2}
+
+$$
 
 4. Edge orientation:
 
-$$\theta(x,y) = \arctan\left(\frac{\partial I / \partial y}{\partial I / \partial x}\right)$$
+$$
+
+\theta(x,y) = \arctan\left(\frac{\partial I / \partial y}{\partial I / \partial x}\right)
+
+$$
 
 <img src="../../Files/fifth-semester/cv/2.png" alt="Edge Detection Example" width="400"/>
 
@@ -77,17 +101,25 @@ $$\theta(x,y) = \arctan\left(\frac{\partial I / \partial y}{\partial I / \partia
 
 * Gradient in **x** direction:
 
-$$\begin{bmatrix}
+$$
+
+\begin{bmatrix}
 0 & 0 & 0 \\
 -1 & 1 & 0 \\
-0 & 0 & 0 \end{bmatrix}$$
+0 & 0 & 0 \end{bmatrix}
+
+$$
 
 * Gradient in **y** direction:
 
-$$\begin{bmatrix}
+$$
+
+\begin{bmatrix}
 0 & 0 & 0 \\
 0 & 1 & 0 \\
-0 & -1 & 0 \end{bmatrix}$$
+0 & -1 & 0 \end{bmatrix}
+
+$$
 
 Apply these filters → gives maps of intensity change → edges.
 

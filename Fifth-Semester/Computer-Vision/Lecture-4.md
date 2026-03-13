@@ -23,7 +23,11 @@
 - **Activation Functions**:
     - **Step Function**:
 
-$$f(x) = \begin{cases} 1 & \text{if } x \geq 0 \\ 0 & \text{if } x < 0 \end{cases}$$
+$$
+
+f(x) = \begin{cases} 1 & \text{if } x \geq 0 \\ 0 & \text{if } x < 0 \end{cases}
+
+$$
 
 Not differentiable $\to$ Cannot use gradient decent.
     - **ReLU**: $f(x) = \max(0, x)$ $\to$ default choice, but make neurons die $\to$ Leaky ReLU: Fixed dead neurons by allowing small negative slope.

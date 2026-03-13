@@ -324,7 +324,11 @@ So, MCTS = planning with a model, and Monte Carlo RL = learning from experience 
 
 - **UCT formula (Upper Confidence Bound for Trees):** a policy that choose the best action $a$ from state $s$
 
-$$\pi_{UCT}(s) = \arg\max_a Q(s,a) + c \sqrt{\frac{\ln n(s)}{n(s,a)}}$$
+$$
+
+\pi_{UCT}(s) = \arg\max_a Q(s,a) + c \sqrt{\frac{\ln n(s)}{n(s,a)}}
+
+$$
 
 * $Q(s,a)$ is the value estimation for action $a$ at state $s$
 
@@ -338,7 +342,11 @@ Means: Choose the action aa that has the best mix of a high value Q(s,a)Q(s,a) a
 
 * **Q-value update:**
 
-$$Q_{\text{new}} \leftarrow Q_{\text{old}} + \frac{1}{n} (R_{\text{sum}} - Q_{\text{old}})$$
+$$
+
+Q_{\text{new}} \leftarrow Q_{\text{old}} + \frac{1}{n} (R_{\text{sum}} - Q_{\text{old}})
+
+$$
 
 * $R_{\text{sum}}$ is sum of rewards from simulations
 * $n$ is the number of visits
@@ -380,10 +388,14 @@ Means: Is like a average update, to refine the value estimate based on new infor
 
   - **Reward function $r(s_t, a_t)$**:
 
-$$r(s_t, a_t) = \begin{cases}
+$$
+
+r(s_t, a_t) = \begin{cases}
 +1 & \text{if win (terminal state)} \\
 -1 & \text{if lose (terminal state)} \\
-0 & \text{otherwise} \end{cases}$$
+0 & \text{otherwise} \end{cases}
+
+$$
 
 ---
 
@@ -415,12 +427,20 @@ $$r(s_t, a_t) = \begin{cases}
         - **SARSA with Function Approximation**:
           - Update $w$ using observed transitions $(S_t, A_t, R_{t+1}, S_{t+1}, A_{t+1})$:
 
-$$w \leftarrow w + \alpha \big(R_{t+1} + \gamma q(S_{t+1}, A_{t+1}, w) - q(S_t, A_t, w)\big) \nabla q(S_t, A_t, w)$$
+$$
+
+w \leftarrow w + \alpha \big(R_{t+1} + \gamma q(S_{t+1}, A_{t+1}, w) - q(S_t, A_t, w)\big) \nabla q(S_t, A_t, w)
+
+$$
 
 - **Q-learning with Function Approximation**:
           - Use greedy action for next state:
 
-$$w \leftarrow w + \alpha \big(R_{t+1} + \gamma \max_{a'} q(S_{t+1}, a', w) - q(S_t, A_t, w)\big) \nabla q(S_t, A_t, w)$$
+$$
+
+w \leftarrow w + \alpha \big(R_{t+1} + \gamma \max_{a'} q(S_{t+1}, a', w) - q(S_t, A_t, w)\big) \nabla q(S_t, A_t, w)
+
+$$
 
 - **Challenge**: Instability and divergence possible with off-policy methods and nonlinear function approximators.
   - **Policy-Based Methods**
@@ -437,10 +457,18 @@ $$w \leftarrow w + \alpha \big(R_{t+1} + \gamma \max_{a'} q(S_{t+1}, a', w) - q(
     - **Update**:
       - Critic computes TD error:
 
-$$\delta_t = R_{t+1} + \gamma \hat{v}(S_{t+1}, w) - \hat{v}(S_t, w)$$
+$$
+
+\delta_t = R_{t+1} + \gamma \hat{v}(S_{t+1}, w) - \hat{v}(S_t, w)
+
+$$
 
 - Actor updates $\theta$ in direction suggested by $\delta_t$:
 
-$$\theta \leftarrow \theta + \alpha \delta_t \nabla \log \pi(A_t|S_t, \theta)$$
+$$
+
+\theta \leftarrow \theta + \alpha \delta_t \nabla \log \pi(A_t|S_t, \theta)
+
+$$
 
 - Critic updates $w$ to reduce value error.

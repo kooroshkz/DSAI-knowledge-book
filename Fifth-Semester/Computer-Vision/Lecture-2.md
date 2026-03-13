@@ -4,7 +4,11 @@
 
 Liner transformations
 
-$$f[n,m] = \sum_{k=0}^{N-1} \sum_{l=0}^{M-1} h[n,m,k,l] g[k,l]$$
+$$
+
+f[n,m] = \sum_{k=0}^{N-1} \sum_{l=0}^{M-1} h[n,m,k,l] g[k,l]
+
+$$
 
 or equivalent matrix multiplications $H: f = H g$ output pixel at `(n,m)` depends on **all input pixels `(k,l)`** with weights given by `h`
 
@@ -18,7 +22,11 @@ The **solution** is **translation invariance**: We want the same filter everywhe
 
 #### Cross-Correlation
 
-$$f[n,m] = g o h = \sum_{k=-N}^{N} \sum_{l=-N}^{N} g[n+k,m+l] h[k,l]$$
+$$
+
+f[n,m] = g o h = \sum_{k=-N}^{N} \sum_{l=-N}^{N} g[n+k,m+l] h[k,l]
+
+$$
 
 **h** kernel is $(-N,N) \times (-N,N)$ sized.
 
@@ -33,7 +41,11 @@ The **kernel is flipped** in comparison to cross-correlation.
 - Associative (order of 2 convolutions doesnt matter $f o (g o h) = (f o g) o h$)
 - Distributive over addition $f o (g + h) = f o g + f o h$
 
-$$f[n,m] = g o h = \sum_{k=-N}^{N} \sum_{l=-N}^{N} g[n - k,m - l] h[k,l]$$
+$$
+
+f[n,m] = g o h = \sum_{k=-N}^{N} \sum_{l=-N}^{N} g[n - k,m - l] h[k,l]
+
+$$
 
 Index goes backwards in g and nicer in mathematics.
 
@@ -57,7 +69,11 @@ Box filters make image ugly as problems are:
 
 #### Gaussian Kernel
 
-$$G(x,y) = \frac{1}{2\pi\sigma^2} \exp\left(-\frac{x^2 + y^2}{2\sigma^2}\right)$$
+$$
+
+G(x,y) = \frac{1}{2\pi\sigma^2} \exp\left(-\frac{x^2 + y^2}{2\sigma^2}\right)
+
+$$
 
 $σ$ = how strong the blur is
 
@@ -100,7 +116,11 @@ Measure rate of change in an image
 
 Combine steps 1 and 2 into one filter by convolving Gaussian + derivative filter:
 
-$$\frac{d}{dx}(f*h) = f * \frac{d}{dx}h$$
+$$
+
+\frac{d}{dx}(f*h) = f * \frac{d}{dx}h
+
+$$
 
 Can happen in :
 - x-direction → detects vertical edges
