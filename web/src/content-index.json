@@ -424,7 +424,9 @@
       {
         "name": "AI-and-Ethics",
         "files": [
-          "Lecture-1.md"
+          "Lecture-1.md",
+          "Lecture-2.md",
+          "Sample_Question.md"
         ]
       }
     ]
