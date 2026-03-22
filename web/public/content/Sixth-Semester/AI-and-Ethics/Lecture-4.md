@@ -1,0 +1,33 @@
+- **AI Unemployment**: AI will replace jobs 47%  → people lose jobs
+  - Luddites → feared machines, Excavator → replaced workers
+  - **Unemployment unlikely**:
+    - New jobs appear (AI engineer, prompt engineer)
+    - More demand for other jobs (excavator → more carpenters)
+    - Completely new jobs (influencer, streamer, personal trainer)
+  - **Lump of labor fallacy**: there is NOT a fixed amount of work
+  -  **Real problem**: specific groups suffer (writers, artists, translators)
+    - AI creates winners and losers
+    - **Quality of work**: AI can make work better (less boring, more creative) but also worse (super-efficiency, pay only when productive, risk shifts to workers, AI as boss, rotten work)
+  - **Quality of work**: Not how many jobs, but how good are those jobs?
+    - **Positive effects**: less boring work, more creativity, faster work
+    - **Negative effects**: super-efficiency (no free time, constant pressure), pay only when productive (Uber drivers, warehouse workers), risk shifts to workers (before: employer had risk, now: worker has risk), AI as boss (decisions by algorithms, feels inhuman), “rotten work” (Kenyan workers reading toxic content for $2/hour)
+  - **Ethical analysis**: Utilitarian (good → cheaper services, bad → workers suffer), Deontology (fairness, dignity, rights of workers)
+- **Inequality**: AI increases because some gain power, others don’t
+  - Big tech (Google, Microsoft, OpenAI) become powerful, hard to compete with
+  - **Vendor lock-in**: you cannot easily switch
+  - Power concentrates in few hands → AI should not be controlled by a few billionaires
+  - Conflict: regulate AI vs freedom for companies, equality vs innovation
+  - Ethical idea: just because something is possible → doesn’t mean it is right
+- **Cognitive degeneration**: AI makes us “dumber” because of cognitive offloading (letting AI think for you)
+  - Examples: GPS → worse navigation skills, calculators → less mental math
+  - Counterarguments: historical (Socrates → writing → worse memory but writing is good), utilitarian (faster results, better quality), Whitehead (thinking should be used rarely but powerfully → outsource simple tasks, focus on important thinking)
+  - **Human dignity argument** (Duty ethics): thinking is part of being human, if AI replaces thinking → we lose part of ourselves
+  - **Counterargument**: humans always change, technology always changes us → no clear answer
+
+- **Extended cognition**: thinking is not only in your brain but also in books, tools, AI → AI is just an extension of thinking
+
+- **AI in education**: different because the goal is learning, if students use AI → no practice, no learning
+  - Analogy: pilot must learn to fly manually first, same for students → must learn without AI first
+  - Conclusion: AI in real life → OK, AI in education → risky
+- **Example case**: Alicia Cai + efficient, realistic, good tool - no real learning, depends on companies, AI cannot think academically, threatens jobs
+  - **Ethical analysis**: Utilitarian (good → efficient, bad → no learning), Deontology (duty to learn, fairness for students who don’t use AI)
