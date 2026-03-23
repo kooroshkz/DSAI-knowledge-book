@@ -1,0 +1,14 @@
+- **Future AI**: Not technical, but philosophical, ethical, personal
+  - **Two extremes**: Dystopia (AI destroys humans, humans become useless, robots dominate) vs Utopia (AI solves everything, no disease, no poverty)
+  - **Reality**: somewhere in the middle, AI has benefits and risks, depends on how we use it
+  - **Human + AI**: not just AI vs humans, but also human + AI → cyborgs, brain implants, extra limbs → ethical question
+    - **For**: better life, more ability, like glasses or prosthetics
+    - **Against**: violates human nature, harms dignity, “humans should stay human
+    - **Ethical analysis**: Utilitarian (good → better life, bad → harms dignity), Deontology (violates human nature), Virtue ethics (depends on character and intention)
+  - **AI kill?** No: AI has no reason
+    - **Bostrom**: AI doesn’t need a reason, it just optimizes goals → can lead to bad outcomes (paperclip story)
+      - **Danger** is not evil AI, but misaligned goals
+  - **Value alignment**: Make AI goals match human values → very hard because humans don’t agree on values and values change
+  - **Do humans need to exist?** 
+    - **Derek Parfit**: humanity must survive, future humans matter
+    - **Utilitarian**: if robots are happier than humans → maybe that’s fine
